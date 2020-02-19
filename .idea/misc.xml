@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="ProjectResources">
+    <resource url="http://dubbo.apache.org/schema/dubbo" location="D:/java教学视频/e3商城_day01/黑马32期/01.教案-3.0/01.参考资料/dubbo/dubbo.xsd" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
