@@ -1,4 +1,4 @@
-package com.cjp.service;
+package com.e3mall.service;
 
 import pojo.TbItem;
 

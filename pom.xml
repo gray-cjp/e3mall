@@ -10,6 +10,7 @@
     <modules>
         <module>e3-common</module>
         <module>e3-manager</module>
+        <module>e3-manager-web</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -39,6 +40,7 @@
         <activemq.version>5.11.2</activemq.version>
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
     <dependencyManagement>
         <dependencies>

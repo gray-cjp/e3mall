@@ -1,6 +1,6 @@
 package com.cjp.service.impl;
 
-import com.cjp.service.ItemService;
+import com.e3mall.service.ItemService;
 import mapper.TbItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
