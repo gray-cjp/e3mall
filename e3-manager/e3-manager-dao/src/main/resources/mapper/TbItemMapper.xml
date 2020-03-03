@@ -302,4 +302,40 @@
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <select id="selectTbItemList" parameterType="pojo.TbItem" resultType="map">
+    select * from tb_item where 1=1
+    <if test="title != null and title !=''">
+      and title = #{title,jdbcType=VARCHAR}
+    </if>
+    <if test="sellPoint != null and sellPoint != ''">
+      and sell_point = #{sellPoint,jdbcType=VARCHAR}
+    </if>
+    <if test="price != null and price != ''">
+      and price = #{price,jdbcType=BIGINT}
+    </if>
+    <if test="num != null and num!=''">
+     and  num = #{num,jdbcType=INTEGER}
+    </if>
+    <if test="barcode != null and barcode !=''">
+      and barcode = #{barcode,jdbcType=VARCHAR}
+    </if>
+    <if test="image != null and image !=''">
+      and image = #{image,jdbcType=VARCHAR}
+    </if>
+    <if test="cid != null and cid !=''">
+     and  cid = #{cid,jdbcType=BIGINT}
+    </if>
+    <if test="status != null">
+      and status = #{status,jdbcType=TINYINT}
+    </if>
+    <if test="created != null and created != ''">
+      and created = #{created,jdbcType=TIMESTAMP}
+    </if>
+    <if test="updated != null and updated != ''">
+     and  updated = #{updated,jdbcType=TIMESTAMP}
+    </if>
+  </select>
+  <select id="selectCount" resultType="java.lang.Integer">
+    select nullif (count(1),0) from tb_item
+  </select>
 </mapper>

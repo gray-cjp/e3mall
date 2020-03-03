@@ -1,6 +1,8 @@
 package mapper;
 
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import pojo.TbItem;
 import pojo.TbItemExample;
@@ -27,4 +29,8 @@ public interface TbItemMapper {
     int updateByPrimaryKeySelective(TbItem record);
 
     int updateByPrimaryKey(TbItem record);
+
+    List<Map<String, Object>> selectTbItemList(TbItem tbItem);
+
+    int selectCount();
 }
