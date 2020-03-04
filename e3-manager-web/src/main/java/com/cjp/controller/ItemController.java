@@ -35,7 +35,7 @@ public class ItemController {
         return "tbItem";
     }
 
-    @RequestMapping("/item-list")
+    @RequestMapping("/item")
     @ResponseBody
     private PageInfo getItemList(TbItem tbItem,String page,String limit) {
         log.info("page:"+page+"  limit:"+limit+"TbItem:"+tbItem);

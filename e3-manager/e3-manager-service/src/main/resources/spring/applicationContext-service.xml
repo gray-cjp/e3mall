@@ -13,6 +13,7 @@
 	<!-- 配置包扫描器 -->
 	<context:component-scan base-package="com.e3mall.service"/>
 	<bean id="itemServiceImpl" class="com.cjp.service.impl.ItemServiceImpl"></bean>
+	<bean id="itemCatServiceImpl" class="com.cjp.service.impl.ItemCatServiceImpl"></bean>
 	<!-- 使用dubbo发布服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->
 	<dubbo:application name="e3-manager" />
@@ -21,4 +22,5 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.e3mall.service.ItemService" ref="itemServiceImpl" timeout="600000"/>
+	<dubbo:service interface="com.e3mall.service.ItemCatService" ref="itemCatServiceImpl" timeout="600000"/>
 </beans>
